@@ -1,0 +1,29 @@
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Dependencias
+node_modules/
+package-lock.json
+
+# Archivos temporales
+*.tmp
+*.temp
+
+# Archivos de backup
+*.backup
+*.bak
+
+# Archivos de configuración local
+.env
+.env.local
+config.local.js
+
+# Scripts de deploy (opcional)
+deploy-to-github.sh

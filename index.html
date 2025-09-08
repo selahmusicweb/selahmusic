@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SelahMusic - Página 2025</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo-space">
+            SelahMusic
+        </div>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a class="nav-link active" onclick="scrollToSection('hero')">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" onclick="scrollToSection('raiz')">Devocional</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" onclick="scrollToSection('fundamento')">Fundamento</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" onclick="scrollToSection('practica')">Práctica</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" onclick="scrollToSection('legado')">Comunidad</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" onclick="scrollToSection('contacto')">Contacto</a>
+            </li>
+        </ul>
+        <div class="user-section">
+            <div id="loginSection">
+                <button class="login-button" onclick="openLoginModal()">Iniciar Sesión</button>
+            </div>
+            <div id="userSection" style="display: none;">
+                <span class="user-info">Bienvenido, <span id="userName"></span></span>
+                <button class="logout-button" onclick="logout()">Cerrar Sesión</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="selah">Selah</span>Music
+            </h1>
+            <p class="hero-slogan">
+                Nuestra misión no es enseñar música. Es despertar adoradores que escuchen el cielo, caminen en verdad y marquen generaciones con su voz.
+            </p>
+            
+            <button class="cta-button" onclick="scrollToSection('raiz')">
+                Comienza tu camino
+            </button>
+        </div>
+        <div class="scroll-indicator">↓</div>
+    </section>
+
+    <!-- Raíz Section -->
+    <section class="raiz-section" id="raiz">
+        <div class="section-header">
+            <h2 class="section-title">Devocional / Intimidad con Dios</h2>
+        </div>
+        <p class="section-subtitle">Todo comienza en la intimidad con Dios.</p>
+        
+        <div class="cards-container">
+            <div class="card">
+                <h3 class="card-title">Devocional 365 días</h3>
+                <p class="card-description">
+                    Un año completo de reflexiones diarias que fortalecerán tu relación con Dios. 
+                    Cada día incluye una lectura bíblica, reflexión y oración guiada para nutrir tu alma.
+                </p>
+            </div>
+            
+            <div class="card">
+                <h3 class="card-title">Podcast "Ser Hallado en Él"</h3>
+                <p class="card-description">
+                    Episodios semanales que profundizan en la vida cristiana y la adoración auténtica. 
+                    Conversaciones inspiradoras que transformarán tu perspectiva espiritual.
+                </p>
+            </div>
+            
+            <div class="card">
+                <h3 class="card-title">Altar en Casa</h3>
+                <p class="card-description">
+                    Guías prácticas para crear tu espacio sagrado de encuentro con Dios. 
+                    Aprende a establecer rutinas de oración, adoración personal y comunión íntima en tu hogar.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fundamento Section -->
+    <section class="fundamento-section" id="fundamento">
+        <div class="section-header">
+            <h2 class="section-title">Fundamento - Formación Ministerial y Musical</h2>
+        </div>
+        <p class="section-subtitle">El adorador no solo canta, se forma con excelencia.</p>
+        
+        <div class="fundamento-cards">
+            <div class="fundamento-card">
+                <h3 class="card-title">¿Qué es un adorador?</h3>
+                <p class="card-description">
+                    Descubre la verdadera esencia de la adoración más allá de la música. 
+                    Comprende tu llamado como adorador en espíritu y verdad.
+                </p>
+                <button class="course-button" onclick="checkAccess('adorador')">Acceder al curso</button>
+            </div>
+            
+            <div class="fundamento-card">
+                <h3 class="card-title">Fundamentos bíblicos</h3>
+                <p class="card-description">
+                    Estudia las bases escriturales de la adoración y el ministerio musical. 
+                    Fortalece tu conocimiento teológico para servir con excelencia.
+                </p>
+                <button class="course-button" onclick="checkAccess('biblicos')">Acceder al curso</button>
+            </div>
+            
+            <div class="fundamento-card">
+                <h3 class="card-title">Introducción al instrumento</h3>
+                <p class="card-description">
+                    Primeros pasos en piano, guitarra y otros instrumentos. 
+                    Aprende técnicas básicas con un enfoque ministerial y devocional.
+                </p>
+                <button class="course-button" onclick="checkAccess('instrumento')">Acceder al curso</button>
+            </div>
+        </div>
+        
+        <!-- Inscription CTA -->
+        <div class="inscription-cta">
+            <h3>¿Listo para profundizar en tu formación ministerial?</h3>
+            <p>Regístrate para acceder a todos los cursos de fundamento y comenzar tu transformación.</p>
+            <button class="inscription-button" onclick="openRegistrationModal()">Inscribirse Ahora</button>
+        </div>
+    </section>
+
+    <!-- Práctica Section -->
+    <section class="practica-section" id="practica">
+        <div class="section-header">
+            <h2 class="section-title">Práctica - Cursos Técnicos</h2>
+        </div>
+        <p class="section-subtitle">Tu don se activa cuando lo pones en práctica.</p>
+        
+        <div class="practica-cards">
+            <div class="practica-card">
+                <h3 class="card-title">Guitarra Acústica</h3>
+                <ul class="course-topics">
+                    <li>Acordes básicos y avanzados</li>
+                    <li>Técnicas de rasgueo</li>
+                    <li>Fingerpicking y arpegios</li>
+                    <li>Transposición y capo</li>
+                </ul>
+                <button class="course-button" onclick="checkAccess('guitarra')" style="margin-top: 1.5rem;">Acceder al curso</button>
+            </div>
+            
+            <div class="practica-card">
+                <h3 class="card-title">Piano</h3>
+                <ul class="course-topics">
+                    <li>Técnica y postura</li>
+                    <li>Acordes y progresiones</li>
+                    <li>Improvisación</li>
+                    <li>Acompañamiento congregacional</li>
+                </ul>
+                <button class="course-button" onclick="checkAccess('piano')" style="margin-top: 1.5rem;">Acceder al curso</button>
+            </div>
+            
+            <div class="practica-card">
+                <h3 class="card-title">Teoría Musical</h3>
+                <ul class="course-topics">
+                    <li>Escalas y modos musicales</li>
+                    <li>Círculo de quintas</li>
+                    <li>Progresiones armónicas</li>
+                    <li>Análisis de canciones</li>
+                </ul>
+                <button class="course-button" onclick="checkAccess('teoria')" style="margin-top: 1.5rem;">Acceder al curso</button>
+            </div>
+        </div>
+        
+        <!-- Inscription CTA for Práctica -->
+        <div class="inscription-cta">
+            <h3>¿Listo para desarrollar tu técnica musical?</h3>
+            <p>Regístrate para acceder a todos los cursos técnicos y llevar tu música al siguiente nivel.</p>
+            <button class="inscription-button" onclick="openRegistrationModal()">Inscribirse Ahora</button>
+        </div>
+    </section>
+
+    <!-- Legado Section -->
+    <section class="legado-section" id="legado">
+        <div class="section-header">
+            <h2 class="section-title">Comunidad y Producción Musical</h2>
+        </div>
+        <p class="section-subtitle">No fuimos llamados a brillar solos, sino a multiplicar.</p>
+        
+        <div class="legado-cards">
+            <div class="legado-card">
+                <h3 class="card-title">Estudio de Grabación Selah</h3>
+                <p class="card-description">
+                    Acceso exclusivo a nuestro estudio de grabación profesional. 
+                    Graba tus composiciones y proyectos musicales con calidad de estudio.
+                </p>
+            </div>
+            
+            <div class="legado-card">
+                <h3 class="card-title">Proyectos con propósito</h3>
+                <p class="card-description">
+                    Participa en la creación de música con impacto eterno. 
+                    Colabora en álbumes, singles y proyectos que transforman vidas.
+                </p>
+            </div>
+            
+            <div class="legado-card">
+                <h3 class="card-title">Comunidad de apoyo mutuo</h3>
+                <p class="card-description">
+                    Únete a nuestra red global de adoradores. 
+                    Conecta, colabora y crece junto a músicos que comparten tu pasión por la adoración auténtica.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto Section -->
+    <section class="contacto-section" id="contacto">
+        <div class="contacto-content">
+            <h2 class="contacto-title">¿Listo para comenzar tu camino?</h2>
+            
+            <div class="form-container">
+                <form class="contact-form" onsubmit="handleContactSubmit(event)">
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="etapa">Selección de etapa</label>
+                        <select id="etapa" name="etapa" required>
+                            <option value="">Selecciona tu etapa actual</option>
+                            <option value="raiz">Raíz - Vida Devocional</option>
+                            <option value="fundamento">Fundamento - Formación Ministerial</option>
+                            <option value="practica">Práctica - Desarrollo Musical</option>
+                            <option value="legado">Legado - Comunidad y Producción</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje o historia personal</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Comparte tu historia, expectativas o cualquier pregunta que tengas..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-button">
+                        Comenzar mi transformación
+                    </button>
+                </form>
+            </div>
+            
+            <div class="inspirational-quote">
+                <p>"Cantad alegres a Dios, habitantes de toda la tierra. Servid a Jehová con alegría; Venid ante su presencia con regocijo."</p>
+                <span>- Salmos 100:1-2</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Login/Registration Modal -->
+    <div id="authModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-header">
+                <h2>Únete a SelahMusic</h2>
+                <p>Accede a todos los cursos y recursos exclusivos</p>
+            </div>
+            <div class="modal-body">
+                <div class="form-tabs">
+                    <button type="button" class="tab-button active" onclick="switchTab('login')">Iniciar Sesión</button>
+                    <button type="button" class="tab-button" onclick="switchTab('register')">Registrarse</button>
+                </div>
+                
+                <!-- Login Form -->
+                <div id="loginTab" class="tab-content active">
+                    <form onsubmit="handleLogin(event)">
+                        <div class="form-group">
+                            <label for="loginEmail">Correo electrónico</label>
+                            <input type="email" id="loginEmail" required>
+                            <div id="loginEmailError" class="error-message"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="loginPassword">Contraseña</label>
+                            <input type="password" id="loginPassword" required>
+                            <div id="loginPasswordError" class="error-message"></div>
+                        </div>
+                        <button type="submit" class="submit-button">Iniciar Sesión</button>
+                        <div id="loginMessage" class="error-message"></div>
+                    </form>
+                </div>
+                
+                <!-- Registration Form -->
+                <div id="registerTab" class="tab-content">
+                    <form onsubmit="handleRegister(event)">
+                        <div class="form-group">
+                            <label for="registerName">Nombre completo</label>
+                            <input type="text" id="registerName" required>
+                            <div id="registerNameError" class="error-message"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="registerEmail">Correo electrónico</label>
+                            <input type="email" id="registerEmail" required>
+                            <div id="registerEmailError" class="error-message"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="registerPassword">Contraseña</label>
+                            <input type="password" id="registerPassword" required minlength="6">
+                            <div id="registerPasswordError" class="error-message"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="confirmPassword">Confirmar contraseña</label>
+                            <input type="password" id="confirmPassword" required>
+                            <div id="confirmPasswordError" class="error-message"></div>
+                        </div>
+                        <button type="submit" class="submit-button">Registrarse</button>
+                        <div id="registerMessage" class="success-message"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Course Content Modal -->
+    <div id="courseModal" class="modal course-modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeCourseModal()">&times;</span>
+            <div class="modal-header">
+                <h2 id="courseTitle">Curso de Fundamento</h2>
+                <p id="courseSubtitle">Contenido exclusivo para estudiantes registrados</p>
+            </div>
+            <div class="course-content">
+                <div id="courseContent">
+                    <!-- Course content will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/auth.js"></script>
+    <script src="assets/js/courses.js"></script>
+    <script src="assets/js/navigation.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
